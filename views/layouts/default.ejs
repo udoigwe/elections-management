@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<!--- General Head tags
+	========================================================================================================== -->
+	<meta charset="utf-8" />
+	<!-- =================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<!-- ====================================================================================================== -->
+	<meta name="description" content="An Elections Management Portal" />
+	<!-- ====================================================================================================== -->
+	<meta name="keywords" content="Elections, Votes, Transparency, Inec, Nigeria">
+	<!-- ====================================================================================================== -->
+	<meta content="Owlio" name="author" />
+	<!-- ====================================================================================================== -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<!-- ====================================================================================================== -->
+	<!--- General Head tags
+	=========================================================================================================== -->
+
+	<!--- Open Graph needs
+	================================================== -->
+	<meta property="og:site_name" content="Owlio">
+	<!--======================================================================================================= --> 
+	<meta property="og:title" content="Owlio" />
+	<!--======================================================================================================= --> 
+	<meta property="og:description" content="An Elections Management Portal" />
+	<!--======================================================================================================= --> 
+	<meta property="og:image" itemprop="image" content="/assets/img/favicon.png">
+	<!--======================================================================================================= --> 
+	<meta property="og:type" content="website" />
+	<!--======================================================================================================= --> 
+	<meta property="og:url" content="https://owlio.com/" />
+	<!--======================================================================================================= --> 
+	<!--- Open Graph needs
+	=========================================================================================================== -->
+
+	<!--- Twitter needs
+	=========================================================================================================== -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<!-- ====================================================================================================== -->
+	<meta property="twitter:site" content="@USERNAME">
+	<!--======================================================================================================= -->
+	<meta property="twitter:creator" content="@USERNAME">
+	<!--======================================================================================================= --> 
+	<meta property="twitter:title" content="Owlio" />
+	<!--======================================================================================================= --> 
+	<meta property="twitter:description" content="An Elections Management Portal" />
+	<!--======================================================================================================= --> 
+	<meta property="twitter:image" content="/assets/img/favicon.png">
+	<!--======================================================================================================= --> 
+	<!-- Twitter needs
+	=========================================================================================================== -->
+	<!-- Page Title Here -->
+    <title><%- title %></title>
+
+    <!-- Favicon icon -->
+	<link rel="icon" type="image/x-icon" href="assets/img/favicon.png"/>
+	<!-- BEGIN GLOBAL MANDATORY STYLES -->
+	<link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="assets/css/plugins.css" rel="stylesheet" type="text/css" />
+	<link href="assets/css/authentication/form-2.css" rel="stylesheet" type="text/css" />
+	<!-- END GLOBAL MANDATORY STYLES -->
+	<!-- Button loaders -->
+	<link rel="stylesheet" type="text/css" href="assets/css/loading.css"/>
+	<link rel="stylesheet" type="text/css" href="assets/css/loading-btn.css"/>
+	<link rel="stylesheet" type="text/css" href="assets/css/forms/theme-checkbox-radio.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/forms/switches.css">
+	<!-- BEGIN THEME GLOBAL STYLES -->
+    <link href="assets/css/scrollspyNav.css" rel="stylesheet" type="text/css" />
+    <link href="plugins/animate/animate.css" rel="stylesheet" type="text/css" />
+    <script src="plugins/sweetalerts/promise-polyfill.js"></script>
+    <link href="plugins/sweetalerts/sweetalert2.min.css" rel="stylesheet" type="text/css" />
+    <link href="plugins/sweetalerts/sweetalert.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/components/custom-sweetalert.css" rel="stylesheet" type="text/css" />
+    <link rel="manifest" href="manifest.json">
+    <!-- END THEME GLOBAL STYLES -->
+
+    <%- include('../partials/scripts.ejs') %>
+
+	<style type="text/css">
+		.simpleslide100 {
+			display: block;
+			position: fixed;
+			z-index: 0;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+		}
+
+		.simpleslide100-item {
+			display: block;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+		}
+
+		.bg0 {background-color: #fff;}
+
+		.bg-img1 {
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		.overlay1 {
+			position: relative;
+			z-index: 1;
+		}
+		.overlay1::before {
+			content: "";
+			display: block;
+			position: fixed;
+			z-index: -1;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			background-color: rgba(0,0,0,0.9);
+		}
+
+		.svg-icon {
+		  width: 1em;
+		  height: 1em;
+		}
+
+		.svg-icon path,
+		.svg-icon polygon,
+		.svg-icon rect {
+		  fill: #4691f6;
+		}
+
+		.svg-icon circle {
+		  stroke: #4691f6;
+		  stroke-width: 1;
+		}
+	</style>
+</head>
+<body class="form">
+	<%- body %>
+</body>
+</html>
